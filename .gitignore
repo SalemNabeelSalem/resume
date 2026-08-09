@@ -1,14 +1,5 @@
 # RenderCV build outputs
-rendercv_output/
-*.pdf
-*.md
-*.html
-*.png
-*.typ
-*.tex
-*.aux
-*.log
-*.out
+rendercv_output/*
 
 # Python & Virtual Environments
 __pycache__/
