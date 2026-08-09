@@ -5,6 +5,9 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write
+
 jobs:
   render:
     runs-on: ubuntu-latest
@@ -31,3 +34,10 @@ jobs:
         with:
           name: Salem_Nabil_Salem_Resume
           path: rendercv_output/*.pdf
+
+      - name: Create Release and Upload PDF
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: latest
+          name: "Latest Resume PDF"
+          files: rendercv_output/*.pdf
