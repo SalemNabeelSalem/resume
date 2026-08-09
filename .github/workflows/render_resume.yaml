@@ -31,11 +31,17 @@ jobs:
 
       - name: Prepare Files
         run: |
-          cp rendercv_output/*.pdf rendercv_output/Salem_Nabil_Salem_Resume.pdf
+          # Copy the compiled PDF to the standardized filename
+          pdf_file=$(find rendercv_output -name "*.pdf" | head -n 1)
+          if [ -n "$pdf_file" ]; then
+            cp "$pdf_file" rendercv_output/Salem_Nabil_Salem_Resume.pdf
+          fi
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./rendercv_output
+          publish_branch: gh-pages
           cname: resume.isalem.dev
+          force_orphan: true
