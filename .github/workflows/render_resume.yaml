@@ -29,15 +29,13 @@ jobs:
       - name: Render Resume
         run: rendercv render Salem_Nabil_Salem_Resume.yaml
 
-      - name: Upload PDF Artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: Salem_Nabil_Salem_Resume
-          path: rendercv_output/*.pdf
+      - name: Rename PDF for Release Link
+        run: |
+          cp rendercv_output/*.pdf rendercv_output/Salem_Nabil_Salem_Resume.pdf
 
-      - name: Create Release and Upload PDF
+      - name: Release PDF
         uses: softprops/action-gh-release@v2
         with:
           tag_name: latest
           name: "Latest Resume PDF"
-          files: rendercv_output/*.pdf
+          files: rendercv_output/Salem_Nabil_Salem_Resume.pdf
