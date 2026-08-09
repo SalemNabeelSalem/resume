@@ -29,11 +29,13 @@ jobs:
       - name: Render Resume
         run: rendercv render Salem_Nabil_Salem_Resume.yaml
 
-      - name: Rename PDF for easy access
-        run: cp rendercv_output/*.pdf rendercv_output/Salem_Nabil_Salem_Resume.pdf
+      - name: Prepare Files
+        run: |
+          cp rendercv_output/*.pdf rendercv_output/Salem_Nabil_Salem_Resume.pdf
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./rendercv_output
+          cname: resume.isalem.dev
