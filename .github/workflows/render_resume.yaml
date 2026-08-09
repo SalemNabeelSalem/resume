@@ -31,11 +31,29 @@ jobs:
 
       - name: Prepare Files
         run: |
-          # Copy the compiled PDF to the standardized filename
+          # Locate and copy the generated PDF to the standardized filename
           pdf_file=$(find rendercv_output -name "*.pdf" | head -n 1)
           if [ -n "$pdf_file" ]; then
             cp "$pdf_file" rendercv_output/Salem_Nabil_Salem_Resume.pdf
           fi
+
+          # Create index.html to redirect root URL traffic directly to the PDF
+          cat << 'EOF' > rendercv_output/index.html
+          <!DOCTYPE html>
+          <html lang="en">
+            <head>
+              <meta charset="UTF-8">
+              <meta http-equiv="refresh" content="0; url=/Salem_Nabil_Salem_Resume.pdf">
+              <script type="text/javascript">
+                window.location.href = "/Salem_Nabil_Salem_Resume.pdf";
+              </script>
+              <title>Redirecting to Resume...</title>
+            </head>
+            <body>
+              <p>If you are not redirected automatically, <a href="/Salem_Nabil_Salem_Resume.pdf">click here to view the PDF</a>.</p>
+            </body>
+          </html>
+          EOF
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
@@ -43,5 +61,5 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./rendercv_output
           publish_branch: gh-pages
-          cname: resume.isalem.dev # when dns is set up, uncomment this line to use a custom domain
+          cname: resume.isalem.dev
           force_orphan: true
