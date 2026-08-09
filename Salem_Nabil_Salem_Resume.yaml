@@ -16,6 +16,12 @@ cv:
       - "**DevOps & Full-Stack Web Developer** with 4+ years of experience engineering resilient microservices, high-throughput backend systems, and automated CI/CD pipelines. Proficient across the full software delivery lifecycle using **Spring Boot**, **Node.js**, **React.js**, **Vue.js**, and **Docker**. Skilled in multi-tier database architectures (**MySQL**, **PostgreSQL**, **SQLite**, **MongoDB**, **Cassandra**, **Redis**), cloud deployment (**AWS**, **DigitalOcean**), and cross-platform integrations to build scalable, high-performance web applications."
 
     experience:
+      - company: BLACK LINE GEN TR. CO. LLC
+        position: Software Engineer / Data Analyst
+        location: UAE
+        start_date: 2023-12
+        end_date: present
+
       - company: Ejalo Cosmetics Trading
         position: Full-Stack Web Developer
         location: Ajman, UAE
