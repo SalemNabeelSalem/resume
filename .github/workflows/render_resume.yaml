@@ -1,0 +1,32 @@
+name: Render Resume
+
+on:
+  push:
+    branches: [ main, master ]
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install RenderCV
+        run: |
+          python -m pip install --upgrade pip
+          pip install "rendercv[full]"
+
+      - name: Render Resume
+        run: |
+          rendercv render Salem_Nabil_Salem_Resume.yaml
+
+      - name: Upload PDF Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Salem_Nabil_Salem_Resume
+          path: rendercv_output/*.pdf

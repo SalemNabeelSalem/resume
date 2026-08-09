@@ -1,0 +1,30 @@
+# RenderCV build outputs
+rendercv_output/
+*.pdf
+*.md
+*.html
+*.png
+*.typ
+*.tex
+*.aux
+*.log
+*.out
+
+# Python & Virtual Environments
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+ENV/
+
+# IDEs & Code Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Operating System Files
+.DS_Store
+Thumbs.db

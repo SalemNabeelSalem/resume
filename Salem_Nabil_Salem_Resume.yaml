@@ -1,0 +1,75 @@
+cv:
+  name: Salem Nabil Salem
+  headline: DevOps & Full-Stack Web Developer
+  location: Sharjah, UAE
+  email: isalemnabeelsalem@gmail.com
+  phone: "+971558878215"
+  website: https://portfolio.isalem.dev
+  social_networks:
+    - network: LinkedIn
+      username: isalem-nabeel
+    - network: GitHub
+      username: SalemNabeelSalem
+
+  sections:
+    summary:
+      - "**DevOps & Full-Stack Web Developer** with 4+ years of experience engineering resilient microservices, high-throughput backend systems, and automated CI/CD pipelines. Proficient across the full software delivery lifecycle using **Spring Boot**, **Node.js**, **React.js**, **Vue.js**, and **Docker**. Skilled in multi-tier database architectures (**MySQL**, **PostgreSQL**, **SQLite**, **MongoDB**, **Cassandra**, **Redis**), cloud deployment (**AWS**, **DigitalOcean**), and cross-platform integrations to build scalable, high-performance web applications."
+
+    experience:
+      - company: Ejalo Cosmetics Trading
+        position: Full-Stack Web Developer
+        location: Ajman, UAE
+        start_date: 2022-12
+        end_date: 2023-11
+        highlights:
+          - "**E-Commerce Platform Engineering:** Developed custom integrations and core features for **BigCommerce** and **Shopify** storefronts using **Vue.js**, **React.js**, and REST APIs to enhance front-end user experience and store functionality."
+          - "**Internal Tooling & System Integration:** Built custom internal applications in **Node.js (Express)** and **Python** to automate real-time data sync and state manipulation between **Shopify** and **BigCommerce**."
+          - "**Workflow Automation & Cloud Infrastructure:** Designed automated business workflows using **Zapier** and deployed backend services on **DigitalOcean**, streamlining operational processes and cross-platform communication."
+          - "**Full-Stack UI/API Development:** Created responsive, dynamic web application interfaces paired with modular backend API endpoints, backed by **Git** version control workflows."
+
+      - company: ELA Technologies LLC
+        position: Software Engineer / DevOps & Full-Stack Developer
+        location: Aden, Yemen
+        start_date: 2019-12
+        end_date: 2022-11
+        highlights:
+          - "**Microservices Architecture:** Designed, built, and deployed scalable microservices using **Spring Boot**, **Node.js (Express)**, and **Docker**, reducing application latency and improving system reliability."
+          - "**Database & Caching:** Engineered resilient data storage and caching strategies leveraging **MySQL**, **Cassandra**, and **Redis** to optimize query performance and high-throughput data processing."
+          - "**Cloud & DevOps Automation:** Managed **AWS** cloud infrastructure and built automated **Jenkins** CI/CD pipelines to streamline deployment workflows and cut manual deployment overhead."
+          - "**API & UI Delivery:** Collaborated with cross-functional teams to build and integrate robust RESTful APIs with dynamic front-end UIs, backed by automated testing suites."
+
+    technical_skills:
+      - label: Programming Languages
+        details: Java, Python, PHP, JavaScript (ES6+), SQL
+      - label: Backend Development
+        details: Spring Boot, Node.js, Express.js, RESTful APIs, Microservices Architecture
+      - label: Frontend Development
+        details: HTML5, CSS3, Bootstrap, Tailwind, Vuetify, React.js, Vue.js, Responsive Web Design
+      - label: Databases & Caching
+        details: MySQL, PostgreSQL, SQLite, MongoDB, Cassandra, Redis, Database Design
+      - label: DevOps & Cloud
+        details: Linux, Docker, AWS (EC2, S3, Route53), DigitalOcean, Jenkins (CI/CD Pipelines), Git / GitHub
+      - label: E-Commerce & Tools
+        details: BigCommerce APIs, Shopify Integrations, Zapier Automation, Postman, Swagger / OpenAPI, Jira
+      - label: Security & Testing
+        details: Bug Bounty Research ([Intigriti Profile](https://app.intigriti.com/profile/isalem_nabeel)), Web Application Penetration Testing
+
+    education:
+      - institution: Faculty of Engineering, University of Aden
+        area: Information Technology
+        degree: Bachelor
+        location: Yemen-Aden
+        start_date: 2016
+        end_date: 2020
+
+    languages:
+      - label: Arabic
+        details: Native
+      - label: English
+        details: Professional Working Proficiency
+
+design:
+  theme: classic
+  entry_types:
+    education_entry:
+      degree_width: 2.2 in
