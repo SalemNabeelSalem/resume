@@ -57,7 +57,7 @@ cv:
     education:
       - institution: Faculty of Engineering, University of Aden
         area: Information Technology
-        degree: Bachelor
+        degree: B.Sc.
         location: Yemen-Aden
         start_date: 2016
         end_date: 2020
@@ -70,6 +70,3 @@ cv:
 
 design:
   theme: classic
-  entry_types:
-    education_entry:
-      degree_width: 2.2 in
