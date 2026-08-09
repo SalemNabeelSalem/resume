@@ -29,13 +29,11 @@ jobs:
       - name: Render Resume
         run: rendercv render Salem_Nabil_Salem_Resume.yaml
 
-      - name: Rename PDF for Release Link
-        run: |
-          cp rendercv_output/*.pdf rendercv_output/Salem_Nabil_Salem_Resume.pdf
+      - name: Rename PDF for easy access
+        run: cp rendercv_output/*.pdf rendercv_output/Salem_Nabil_Salem_Resume.pdf
 
-      - name: Release PDF
-        uses: softprops/action-gh-release@v2
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          tag_name: latest
-          name: "Latest Resume PDF"
-          files: rendercv_output/Salem_Nabil_Salem_Resume.pdf
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./rendercv_output
