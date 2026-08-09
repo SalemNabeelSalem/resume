@@ -43,5 +43,5 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./rendercv_output
           publish_branch: gh-pages
-          cname: resume.isalem.dev
+          # cname: resume.isalem.dev # when dns is set up, uncomment this line to use a custom domain
           force_orphan: true
