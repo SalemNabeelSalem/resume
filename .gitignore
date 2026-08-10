@@ -3,6 +3,7 @@ rendercv_output/
 *.pdf
 *.html
 *.png
+!assets/*.png
 *.typ
 *.tex
 *.aux
