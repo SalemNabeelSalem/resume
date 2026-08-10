@@ -1,6 +1,7 @@
 cv:
   name: Salem Nabil Salem
   headline: DevOps & Full-Stack Web Developer
+  photo: assets/personal_photo.png
   location: Sharjah, UAE
   email: isalemnabeelsalem@gmail.com
   phone: "+971558878215"
@@ -18,7 +19,7 @@ cv:
     experience:
       - company: BLACK LINE GEN TR. CO. LLC
         position: Software Engineer / Data Analyst
-        location: UAE
+        location: Sharjah, UAE
         start_date: 2023-12
         end_date: present
 
@@ -64,7 +65,7 @@ cv:
       - institution: Faculty of Engineering, University of Aden
         area: Information Technology
         degree: B.Sc.
-        location: Yemen-Aden
+        location: Aden, Yemen
         start_date: 2016
         end_date: 2020
 
@@ -75,4 +76,4 @@ cv:
         details: Professional Working Proficiency
 
 design:
-  theme: classic
+  theme: moderncv

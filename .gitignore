@@ -27,3 +27,6 @@ ENV/
 # Operating System Files
 .DS_Store
 Thumbs.db
+
+# Ignore markdown draft file
+Salem_Nabil_Salem_Resume.md
