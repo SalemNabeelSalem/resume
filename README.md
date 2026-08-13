@@ -25,12 +25,12 @@ This repository treats my CV as code. By leveraging **YAML** for structured data
 
 ## 📂 What is inside
 
-- Resume source files.
-- Rendered CV output files.
-- Project assets and structure.
+- 📄 Resume source files.
+- 🖨️ Rendered CV output files.
+- 📦 Project assets and structure.
 
 ---
 
 ## 🤝 Thank you 
 
-Thanks for visiting this project.
+🙏 Thanks for visiting this project.
