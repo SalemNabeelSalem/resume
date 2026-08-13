@@ -37,20 +37,23 @@ jobs:
             cp "$pdf_file" rendercv_output/Salem_Nabil_Salem_Resume.pdf
           fi
 
-          # Create index.html to redirect root URL traffic directly to the PDF
+          # Create index.html to redirect root URL traffic directly to the PDF with cache-busting
           cat << 'EOF' > rendercv_output/index.html
           <!DOCTYPE html>
           <html lang="en">
             <head>
               <meta charset="UTF-8">
-              <meta http-equiv="refresh" content="0; url=/Salem_Nabil_Salem_Resume.pdf">
+              <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+              <meta http-equiv="Pragma" content="no-cache" />
+              <meta http-equiv="Expires" content="0" />
+              <meta http-equiv="refresh" content="0; url=/Salem_Nabil_Salem_Resume.pdf?v=${{ github.sha }}">
               <script type="text/javascript">
-                window.location.href = "/Salem_Nabil_Salem_Resume.pdf";
+                window.location.replace("/Salem_Nabil_Salem_Resume.pdf?v=${{ github.sha }}");
               </script>
               <title>Redirecting to Resume...</title>
             </head>
             <body>
-              <p>If you are not redirected automatically, <a href="/Salem_Nabil_Salem_Resume.pdf">click here to view the PDF</a>.</p>
+              <p>If you are not redirected automatically, <a href="/Salem_Nabil_Salem_Resume.pdf?v=${{ github.sha }}">click here to view the PDF</a>.</p>
             </body>
           </html>
           EOF
