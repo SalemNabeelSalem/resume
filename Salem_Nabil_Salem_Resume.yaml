@@ -18,10 +18,14 @@ cv:
 
     experience:
       - company: BLACK LINE GEN TR. CO. LLC
-        position: Software Engineer / Data Analyst
+        position: IT & Software Engineer
         location: Sharjah, UAE
         start_date: 2023-12
         end_date: present
+        highlights:
+          - "**Digital Transformation & B2B Ecosystem:** Led the engineering of the company's centralized web platform and administration portal (blacklineuae.com), streamlining commercial operations and product catalog management."
+          - "**Software Development & Integration:** Developed and integrated software solutions to streamline business processes and improve operational efficiency."
+          - "**Cloud & DevOps Practices:** Implemented cloud-based solutions and automated deployment pipelines to enhance system scalability and reliability."
 
       - company: Ejalo Cosmetics Trading
         position: Full-Stack Web Developer
@@ -44,6 +48,16 @@ cv:
           - "**Database & Caching:** Engineered resilient data storage and caching strategies leveraging **MySQL**, **Cassandra**, and **Redis** to optimize query performance and high-throughput data processing."
           - "**Cloud & DevOps Automation:** Managed **AWS** cloud infrastructure and built automated **Jenkins** CI/CD pipelines to streamline deployment workflows and cut manual deployment overhead."
           - "**API & UI Delivery:** Collaborated with cross-functional teams to build and integrate robust RESTful APIs with dynamic front-end UIs, backed by automated testing suites."
+
+    projects:
+      - name: BlackLine General Trading Co. B2B Platform
+        url: https://www.blacklineuae.com
+        description: "End-to-end B2B trading platform and centralized catalog management system built to streamline commercial operations."
+        highlights:
+          - "Architected a high-performance SSR storefront using Astro.js, React, and Tailwind CSS."
+          - "Designed a custom admin dashboard with JWT authentication, SQLite, and Drizzle ORM."
+          - "Secured API endpoints with Cloudflare Turnstile anti-bot verification and custom IP rate limiting."
+          # - "Engineered an automated Node.js media processing pipeline using Sharp and basic-ftp for optimized WebP image delivery."
 
     technical_skills:
       - label: Programming Languages
